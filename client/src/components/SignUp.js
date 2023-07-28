@@ -87,6 +87,7 @@ function SignUp() {
 
     let JSOData = await JSONData.json();
 
+    alert("Done");
     console.log(JSOData);
   };
 
