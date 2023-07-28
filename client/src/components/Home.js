@@ -12,7 +12,7 @@ function Home() {
       method: "DELETE",
     };
 
-    let url = `http://localhost:3333/deleteUser?id=${loc.state._id}`;
+    let url = `/deleteUser?id=${loc.state._id}`;
     console.log(url);
 
     let JSONData = await fetch(url, reqOptions);
@@ -36,7 +36,7 @@ function Home() {
         Delete Account
       </button>
       <h1>Welcome {loc.state.fn}</h1>
-      <img src={`http://localhost:3333/${loc.state.profilePic}`}></img>
+      <img src={`/${loc.state.profilePic}`}></img>
     </div>
   );
 }
