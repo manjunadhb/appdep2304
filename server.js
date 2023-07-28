@@ -188,6 +188,6 @@ app.post("/validateToken", upload.none(), async (req, res) => {
   }
 });
 
-app.listen(3333, () => {
+app.listen(3000, () => {
   console.log("Listening to port 3333");
 });
